@@ -1,0 +1,13 @@
+<!--Sampe D3 Chart for reference.-->
+<div>
+  <h4>{{ 'JOBASSESSMENT.CHARTTITLE' | translate }}</h4>
+
+
+  <spia-modal [(title)]="title" [(actionButtonLabel)]="actionButtonLabel"
+                 [(cancelButtonLabel)]="cancelButtonLabel" [(launchButtonLabel)]="buttonLabel"
+                 [(data)]="data" [(launchButtonLabel)]="buttonLabel"
+                 (confirm)="confirm($event)" (cancel)="confirm($event)">
+      <spia-dialog></spia-dialog>
+  </spia-modal>
+</div>
+<svg width="200" height="200"></svg>

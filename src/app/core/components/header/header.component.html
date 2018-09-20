@@ -1,0 +1,16 @@
+<nav class="navbar navbar-expand-lg fixed-top nav-bg">
+  <a class="navbar-brand"><img class="rounded-circle" src="./assets/images/SPIA_LOGO.jpg">SPI Automation</a>
+  <button class="navbar-toggler" type="button" (click)="toggleSidebar()">
+    <!-- <span class="navbar-toggler-icon"></span> -->
+    <i class="fa fa-bars text-muted" aria-hidden="true"></i>
+  </button>
+  <div class="collapse navbar-collapse">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item dropdown" ngbDropdown>
+        <a href="javascript:void(0)" class="nav-link" ngbDropdownToggle>
+          <i class="fa fa-user"></i> A263640(Admin) <span (click)="onLoggedout()"><i class="fa fa-fw fa-power-off"></i></span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>

@@ -1,0 +1,49 @@
+$body-bg: #f7f7f7;
+$fa-font-path: '~font-awesome/fonts';
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/mixins';
+@import '~bootstrap/scss/variables';
+
+$theme-colors: (
+  primary: #1251b5,
+  secondary: $gray-600,
+  success: $green,
+  info: $cyan,
+  warning: $yellow,
+  danger: $red,
+  light: $gray-100,
+  dark: #464957
+);
+
+$grid-header-bg: #f6f6f6;
+$grid-hovered-bg: transparent;
+$grid-alt-bg: transparent;
+
+$pager-bg: transparent;
+$pager-border: transparent;
+$pager-hover-text: #333333;
+$pager-hover-bg: transparent;
+$pager-hover-border: transparent;
+$pager-selected-bg: theme-color("primary");
+$pager-selected-border: $pagination-active-border-color !default;
+$pager-button-padding-y: 0;
+
+$dropdown-link-color:               #333333;
+$dropdown-link-hover-color:         #333333;
+$dropdown-link-hover-bg:            #e9f2f5;
+
+
+//fonts
+$uig-font-weight-semi-bold: 600 !default;
+$uig-rem-baseline: 16px;
+$uig-font-family-base: Arial, sans-serif;
+
+//colors
+$uig-color-ocean: #16a6c9;
+$uig-color-text: #272727;
+$uig-color-call-to-action: #1251b5;
+$uig-color-sky: #badce6;
+$uig-table-head-bg: #dcf2f7;
+$uig-menu-link-hover-color: #e7f6f9;
+$uig-menu-link-active-color: #d6eaf0;
+$uig-menu-input-bg-color: #e7f6f9;

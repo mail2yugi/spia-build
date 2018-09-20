@@ -1,0 +1,12 @@
+<nav class="sidebar" [ngClass]="{sidebarPushRight: isActive, collapsed: collapsed}">
+  <div class="list-group">
+    <a routerLink="/spia/dashboard" class="list-group-item" title="Dashboard">
+      <i class="fa fa-dashboard"></i>&nbsp;
+      <span>Dashboard</span>
+    </a>
+  </div>
+  <div class="toggle-button" [ngClass]="{collapsed: collapsed}" (click)="toggleCollapsed()">
+    <i class="fa fa-fw fa-angle-double-left"></i>&nbsp;
+    <span>Version V 1.0</span>
+  </div>
+</nav>

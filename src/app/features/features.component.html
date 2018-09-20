@@ -1,0 +1,9 @@
+<spia-header></spia-header>
+<spia-sidebar (collapsedEvent)="receiveCollapsed($event)"></spia-sidebar>
+<section class="main-container" [ngClass]="{collapsed: collapedSideBar}">
+  <div class="card">
+    <div class="card-body">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</section>

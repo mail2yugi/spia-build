@@ -1,0 +1,95 @@
+@import 'variables';
+@import '~bootstrap/scss/bootstrap';
+@import '~font-awesome/scss/font-awesome.scss';
+@import '~@progress/kendo-theme-bootstrap/scss/grid';
+@import '~font-awesome/scss/font-awesome';
+
+@media screen and (max-width: 992px) {
+  .push-right {
+    .sidebar {
+      left: 235px !important;
+    }
+  }
+}
+
+body {
+  font-family: $uig-font-family-base;
+  color: $uig-color-text;
+  padding-bottom: 5rem;
+  @include media-breakpoint-down(sm) {
+    padding-bottom: 3rem;
+  }
+}
+
+.fa {
+  font-size: 20px !important;
+}
+
+.tick text {
+  font-size: 12px;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #4C5554;
+  stroke-width: 1px;
+}
+
+.x.axis .tick line {
+  display: none
+}
+
+.domain {
+  display: block !important;
+  stroke: #4C5554 !important;
+  stroke-width: 2px !important;
+}
+
+.legend {
+  font-size: 12px;
+  font-family: sans-serif;
+  rect {
+    stroke-width: 2px;
+  }
+}
+
+.nav-bg {
+  background-color: #D20A0F !important;
+}
+
+.navbar-brand {
+  padding: 0px !important;
+}
+
+/*Form inputs*/
+.form-inline {
+  background-color: $uig-menu-input-bg-color;
+  .form-control {
+    background-color: $uig-menu-input-bg-color;
+    color: $uig-color-text;
+    @include box-shadow(none);
+    border: none;
+
+    @include media-breakpoint-up(xl) {
+      padding: 0.6875rem 0;
+    }
+  }
+  .btn-outline-secondary {
+    border: none;
+    color: $uig-color-text;
+    &:hover,
+    &:active,
+    &:focus {
+      @include box-shadow(none);
+      background-color: transparent;
+    }
+  }
+}
+
+a {
+  color: $uig-color-text;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 1rem 2rem 1rem 1.75rem;
+}

@@ -1,0 +1,15 @@
+@import '~ngx-toastr/toastr.css';
+#toast-container {
+  &.toast-top-center, &.toast-bottom-center {
+    left: 0;
+    right: 0;
+    .toast {
+      width: 50%;
+    }
+  }
+  .toast {
+    margin: 0;
+    border-radius: 1px;
+    box-shadow: none;
+  }
+}
